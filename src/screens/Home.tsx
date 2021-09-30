@@ -1,12 +1,13 @@
 import React from 'react';
 import Carousel from 'react-native-snap-carousel';
-import {RootStackParamsList} from '../navigation/StackNavigation';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {ActivityIndicator, Dimensions, View, ScrollView} from 'react-native';
+
 import useMovies from '../hooks/useMovies';
 import MoviePoster from '../components/MoviePoster';
 import HorizontalSlider from '../components/HorizontalSlider';
+import {RootStackParamsList} from '../navigation/StackNavigation';
 
 type Props = NativeStackScreenProps<RootStackParamsList, 'Home'>;
 
