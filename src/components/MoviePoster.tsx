@@ -1,17 +1,17 @@
 import React from 'react';
-import {Image, StyleSheet, View, TouchableOpacity} from 'react-native';
 import {Movie} from '../interfaces/movieInterface';
 import {useNavigation} from '@react-navigation/native';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamsList} from '../navigation/StackNavigation';
-
-type NavigationProp = NativeStackNavigationProp<RootStackParamsList, 'Home'>;
+import {Image, StyleSheet, View, TouchableOpacity} from 'react-native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 interface Props {
   movie: Movie;
   height?: number;
   width?: number;
 }
+
+type NavigationProp = NativeStackNavigationProp<RootStackParamsList, 'Home'>;
 
 const MoviePoster = ({movie, height = 420, width = 300}: Props) => {
   const navigation = useNavigation<NavigationProp>();

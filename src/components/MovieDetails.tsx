@@ -1,9 +1,9 @@
 import React from 'react';
-import {FlatList, Text, View} from 'react-native';
-import {FullMovieDetails} from '../interfaces/movieInterface';
-import {Cast} from '../interfaces/creditsInterface';
-import Icon from 'react-native-vector-icons/Ionicons';
 import CastItem from './CastItem';
+import Icon from 'react-native-vector-icons/Ionicons';
+import {FlatList, Text, View} from 'react-native';
+import {Cast} from '../interfaces/creditsInterface';
+import {FullMovieDetails} from '../interfaces/movieInterface';
 
 interface Props {
   fullmovieDetail: FullMovieDetails;

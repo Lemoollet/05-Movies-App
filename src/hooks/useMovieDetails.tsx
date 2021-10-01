@@ -1,6 +1,6 @@
+import movieDB from '../api/movieDB';
 import {useEffect, useState} from 'react';
 import {FullMovieDetails} from '../interfaces/movieInterface';
-import movieDB from '../api/movieDB';
 import {CreditsResponse, Cast} from '../interfaces/creditsInterface';
 
 interface MovieDetails {

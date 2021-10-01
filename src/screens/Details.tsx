@@ -1,7 +1,9 @@
 import React from 'react';
+import MovieDetails from '../components/MovieDetails';
+import Icon from 'react-native-vector-icons/Ionicons';
+import {useMovieDetails} from '../hooks/useMovieDetails';
 import {RootStackParamsList} from '../navigation/StackNavigation';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {useMovieDetails} from '../hooks/useMovieDetails';
 import {
   View,
   Image,
@@ -11,8 +13,6 @@ import {
   Text,
   ActivityIndicator,
 } from 'react-native';
-import MovieDetails from '../components/MovieDetails';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 type Props = NativeStackScreenProps<RootStackParamsList, 'Details'>;
 
